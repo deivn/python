@@ -1,0 +1,930 @@
+2019-02-21 08:56:10 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: forsaleCrawl)
+2019-02-21 08:56:10 [scrapy.utils.log] INFO: Versions: lxml 4.3.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.5, Platform Windows-10-10.0.14393-SP0
+2019-02-21 08:56:10 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'forsaleCrawl', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'forsale.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'forsaleCrawl.spiders', 'SPIDER_MODULES': ['forsaleCrawl.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
+2019-02-21 08:56:10 [scrapy.extensions.telnet] INFO: Telnet Password: fb036e8df825f78d
+2019-02-21 08:56:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-02-21 08:56:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-02-21 08:56:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-02-21 08:56:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['forsaleCrawl.pipelines.ForsalecrawlPipeline']
+2019-02-21 08:56:10 [scrapy.core.engine] INFO: Spider opened
+2019-02-21 08:56:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 08:56:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-02-21 09:06:24 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: forsaleCrawl)
+2019-02-21 09:06:24 [scrapy.utils.log] INFO: Versions: lxml 4.3.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.5, Platform Windows-10-10.0.14393-SP0
+2019-02-21 09:06:24 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'forsaleCrawl', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'forsale.log', 'NEWSPIDER_MODULE': 'forsaleCrawl.spiders', 'SPIDER_MODULES': ['forsaleCrawl.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
+2019-02-21 09:06:24 [scrapy.extensions.telnet] INFO: Telnet Password: bdd278f25faa0fb5
+2019-02-21 09:06:24 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-02-21 09:06:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-02-21 09:06:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-02-21 09:06:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['forsaleCrawl.pipelines.ForsalecrawlPipeline']
+2019-02-21 09:06:24 [scrapy.core.engine] INFO: Spider opened
+2019-02-21 09:06:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 09:06:24 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-02-21 09:06:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/1-page> (referer: None)
+2019-02-21 09:06:45 [py.warnings] WARNING: D:\devtools\PyCharm 2018.1\helpers\pydev\_pydevd_bundle\pydevd_resolver.py:166: ScrapyDeprecationWarning: Attribute `_root` is deprecated, use `root` instead
+  attr = getattr(var, n)
+
+2019-02-21 09:07:10 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: forsaleCrawl)
+2019-02-21 09:07:10 [scrapy.utils.log] INFO: Versions: lxml 4.3.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.5, Platform Windows-10-10.0.14393-SP0
+2019-02-21 09:07:10 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'forsaleCrawl', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'forsale.log', 'NEWSPIDER_MODULE': 'forsaleCrawl.spiders', 'SPIDER_MODULES': ['forsaleCrawl.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
+2019-02-21 09:07:10 [scrapy.extensions.telnet] INFO: Telnet Password: f1cf78e4b0e137ef
+2019-02-21 09:07:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-02-21 09:07:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-02-21 09:07:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-02-21 09:07:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['forsaleCrawl.pipelines.ForsalecrawlPipeline']
+2019-02-21 09:07:10 [scrapy.core.engine] INFO: Spider opened
+2019-02-21 09:07:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 09:07:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-02-21 09:07:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/1-page> (referer: None)
+2019-02-21 09:08:34 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: forsaleCrawl)
+2019-02-21 09:08:34 [scrapy.utils.log] INFO: Versions: lxml 4.3.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.5, Platform Windows-10-10.0.14393-SP0
+2019-02-21 09:08:34 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'forsaleCrawl', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'forsale.log', 'NEWSPIDER_MODULE': 'forsaleCrawl.spiders', 'SPIDER_MODULES': ['forsaleCrawl.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
+2019-02-21 09:08:34 [scrapy.extensions.telnet] INFO: Telnet Password: 746f0f5842e1cd07
+2019-02-21 09:08:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-02-21 09:08:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-02-21 09:08:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-02-21 09:08:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['forsaleCrawl.pipelines.ForsalecrawlPipeline']
+2019-02-21 09:08:34 [scrapy.core.engine] INFO: Spider opened
+2019-02-21 09:08:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 09:08:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-02-21 09:08:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/1-page> (referer: None)
+2019-02-21 09:09:48 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: forsaleCrawl)
+2019-02-21 09:09:48 [scrapy.utils.log] INFO: Versions: lxml 4.3.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.5, Platform Windows-10-10.0.14393-SP0
+2019-02-21 09:09:48 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'forsaleCrawl', 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'forsale.log', 'NEWSPIDER_MODULE': 'forsaleCrawl.spiders', 'SPIDER_MODULES': ['forsaleCrawl.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
+2019-02-21 09:09:48 [scrapy.extensions.telnet] INFO: Telnet Password: 1089cd7d252a6fe1
+2019-02-21 09:09:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-02-21 09:09:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-02-21 09:09:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-02-21 09:09:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['forsaleCrawl.pipelines.ForsalecrawlPipeline']
+2019-02-21 09:09:48 [scrapy.core.engine] INFO: Spider opened
+2019-02-21 09:09:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 09:09:48 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-02-21 09:09:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/1-page> (referer: None)
+2019-02-21 09:10:59 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2019-02-21 09:11:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/2818-Country-Club-Rd-Endwell-NY/54fa5f0caff8391b518b45ad> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/2818-Country-Club-Rd-Endwell-NY/54fa5f0caff8391b518b45ad>
+{'addressLocality': 'Endwell',
+ 'addressRegion': 'NY',
+ 'baths': '2 baths',
+ 'beds': '4',
+ 'build_year': '1955',
+ 'des': 'Beautifully landscaped brick Cape Cod with Master Bedroom on main '
+        'level. New lining in gorgeous pool. Oak hardwood floors in living '
+        'room and all bedrooms. Woodmode kitchen cabinets. Gas fireplace in '
+        'living room. Replacement windows throughout. Newly remodeled '
+        'bathrooms. Walk-out finished basement. Covered breezeway off garage, '
+        'all on main level. Total Taxes: $4107    ',
+ 'lot_size': '0.41 Acres',
+ 'parking': '1 Space',
+ 'phone': '607 748-7787',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2394/23940006-1.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-2.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-3.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-4.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-5.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-6.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-7.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-8.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-9.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-10.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-11.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-12.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-13.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-14.jpg?1408076752',
+          'https://www.forsalebyowner.com/images/original/2394/23940006-15.jpg?1408076752'],
+ 'postalCode': '13760',
+ 'price': '$165,000',
+ 'sqft': '1,575sqft',
+ 'status': 'Active',
+ 'streetAddress': '2818 Country Club Rd',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/120-Sunrise-Dr-Plattsburgh-NY/580e603fb0f839ef778b4568> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/120-Sunrise-Dr-Plattsburgh-NY/580e603fb0f839ef778b4568>
+{'addressLocality': 'Plattsburgh',
+ 'addressRegion': 'NY',
+ 'baths': '4 baths',
+ 'beds': '3',
+ 'build_year': '1979',
+ 'des': "CUSTOM DESIGNED HOME ON 90' OF LAKE CHAMPLAIN. RUTT CHERRY KITCHEN "
+        "WITH LARGE PANTRY SPACE, MARBLE FIREPLACE, INDOOR 60' POOL, FORMAL "
+        'DINING ROOM WITH TEAK FLOOR, LARGE CLOSETS WITH PELLA SLIDING DOORS, '
+        'BUILT IN STORAGE DRAWERS, ANDERSON WINDOWS, NEW CONCRETE BOAT RAMP, '
+        'ANCHOR FOR MOORING BOAT. THERMOSTAT IN EACH ROOM. CONVERTIBLE AREA '
+        'CAN MAKE 4TH BEDROOM.',
+ 'lot_size': '2.5 Spaces',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2410/24107797-3.jpg?1477339339',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-7.jpg?1477339439',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-8.jpg?1477339439',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-12.jpg?1477339601',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-15.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-16.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-17.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-18.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-19.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-20.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-21.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-22.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-23.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-24.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-25.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-26.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-27.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-28.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-29.jpg?1477339759',
+          'https://www.forsalebyowner.com/images/original/2410/24107797-30.jpg?1477339759'],
+ 'postalCode': '12901',
+ 'price': '$625,000',
+ 'sqft': '4,800sqft',
+ 'status': 'Active',
+ 'streetAddress': '120 Sunrise Dr',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/110-Wooddale-Ave-Peekskill-NY/5504cfe6aff839a5218b4567> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/110-Wooddale-Ave-Peekskill-NY/5504cfe6aff839a5218b4567>
+{'addressLocality': 'Peekskill',
+ 'addressRegion': 'NY',
+ 'baths': '2 baths',
+ 'beds': '3',
+ 'build_year': '2001',
+ 'des': ' 2200 sq. ft lovingly kept split ranch home sitting on meticulously '
+        'kept 3/4 acre on dead end street. Built in 2001, this home features: '
+        '3 bedrooms (Master bedroom with bathroom) 2 bathrooms Granite '
+        'counters and new stainless steel appliances in Kitchen Living room '
+        'features top of the line Quadra-Fire pellet stove with custom mantle, '
+        'surrounded by stone work and custom built-ins throughout Basement is '
+        'fully finished with hand crafted bar Hi-hat lighting throughout home '
+        'Central Air Heated 2 car garage FIOS, Optimum, DirectTV Ready '
+        'Exterior boasts 2 tier deck, covered portion with wood burning '
+        "fireplace and wiring and setup for TV. Uncovered portion into 21' "
+        'round heated pool.  9 zone sprinkler system, vinyl fenced yard, '
+        'Gazebo w/Koi pond. Property backs up to Blue Mountain Preserve. '
+        'Peekskill School District, Town water and sewer.  Straight shot down '
+        'Hudson Ave to Metro-North Railroad or Route 9.',
+ 'lot_size': '0.75 Acres',
+ 'parking': '2 Space',
+ 'phone': '9147554695',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2402/24021350-1.jpg?1426372169',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-2.jpg?1426372181',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-19.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-3.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-4.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-5.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-6.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-7.jpg?1427218389',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-17.jpg?1427218417',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-8.jpg?1427218417',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-16.jpg?1427218428',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-9.jpg?1427218428',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-10.jpg?1427218428',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-18.jpg?1427218428',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-11.jpg?1427218428',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-20.jpg?1446515661',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-13.jpg?1446515661',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-14.jpg?1446515661',
+          'https://www.forsalebyowner.com/images/original/2402/24021350-15.jpg?1446515661'],
+ 'postalCode': '10566',
+ 'price': '$440,000',
+ 'sqft': '2,200sqft',
+ 'status': 'Active',
+ 'streetAddress': '110 Wooddale Ave',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/110-SCOUT-HILL-RD-MAHOPAC-NY/54fa6ed3aff8394e078b4599> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/110-SCOUT-HILL-RD-MAHOPAC-NY/54fa6ed3aff8394e078b4599>
+{'addressLocality': 'MAHOPAC',
+ 'addressRegion': 'NY',
+ 'baths': '4 baths',
+ 'beds': '4',
+ 'build_year': '2003',
+ 'des': ' Private luxurious estate for sale by owner in Mahopac, NY 10541. '
+        'Imagine yourself driving up to your dream home. You look and see two '
+        'large stone pillars as the electric entry gate swings open to welcome '
+        'you home to mountain views. This extra ordinary private estate is '
+        'surrounded by 16 acres of pure privacy and tranquility. The home '
+        'flaunts vaulted ceilings and extra large rooms. Come enjoy lounging '
+        'in your master bedroom suite and indulge in your own spa like '
+        'bathroom. All bedrooms are over-sized. This home boasts a large '
+        'Gourmet style kitchen with stainless steel industrial size '
+        'appliances. The home is fully prepared for home automation. Every '
+        'room is wired for Ethernet, Coax, and Telephone, as well as 14 '
+        'speakers. Come and enjoy your own private get away everyday. If you '
+        'are looking for a luxury retreat, 10 acres of potential hunting, or '
+        'just to relax on your own compound, this is the house for you!',
+ 'parking': '3 Space',
+ 'phone': '9144906199',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2401/24010208-23.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-1.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-2.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-3.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-4.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-5.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-6.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-7.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-8.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-9.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-10.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-11.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-12.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-13.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-14.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-15.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-16.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-17.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-18.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-19.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-20.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-21.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-22.jpg?1521669081',
+          'https://www.forsalebyowner.com/images/original/2401/24010208-24.jpg?1521669288'],
+ 'postalCode': '10541',
+ 'price': '$710,000',
+ 'sqft': '3,700sqft',
+ 'status': 'Active',
+ 'streetAddress': '110 SCOUT HILL RD',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/Harvard-Drive-Plainview-NY/54fa5f93aff83974538b45ad> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/Harvard-Drive-Plainview-NY/54fa5f93aff83974538b45ad>
+{'addressLocality': 'Plainview',
+ 'addressRegion': 'NY',
+ 'baths': '2.5 baths',
+ 'beds': '4',
+ 'build_year': '1971',
+ 'des': 'This house is located off prime Washington Avenue in Plainview. '
+        'Wonderful school district. Private backyard with beautiful '
+        'landscapes. Friendly neighbors. For more information kindly contact.',
+ 'parking': '2 Space',
+ 'phone': '516-224-4339',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2394/23948474-1.jpg?1408076686',
+          'https://www.forsalebyowner.com/images/original/2394/23948474-2.jpg?1408076686',
+          'https://www.forsalebyowner.com/images/original/2394/23948474-3.jpg?1408076686',
+          'https://www.forsalebyowner.com/images/original/2394/23948474-4.jpg?1408076686',
+          'https://www.forsalebyowner.com/images/original/2394/23948474-5.jpg?1408076686',
+          'https://www.forsalebyowner.com/images/original/2394/23948474-6.jpg?1532301824'],
+ 'postalCode': '11803',
+ 'price': '$765,000',
+ 'sqft': '2,200sqft',
+ 'status': 'Active',
+ 'streetAddress': 'Harvard Drive',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/410-Geyser-Road-Ballston-Spa-NY/54fa5d64aff839ee4b8b45c7> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/410-Geyser-Road-Ballston-Spa-NY/54fa5d64aff839ee4b8b45c7>
+{'addressLocality': 'Ballston Spa',
+ 'addressRegion': 'NY',
+ 'baths': '1.5 baths',
+ 'beds': '2',
+ 'build_year': '1960',
+ 'des': '1.8 acres with 200 foot road frontage bordering 200 feet of parking '
+        'lot of strip mall next door. Zoned commercial. Multi use application. '
+        "Additional bordering 75' X 250 lot with commercial retail store "
+        'available. High visibility House interior renovated with new spray '
+        'foam insulation, kitchen remodel, new bathrooms, carpeting all '
+        'ingreat condition. Available for rental.',
+ 'lot_size': '1.80 Acres',
+ 'parking': '2 Space',
+ 'phone': '518-587-2177',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2390/23905745-1.jpg?1408076682',
+          'https://www.forsalebyowner.com/images/original/2390/23905745-2.jpg?1408076682',
+          'https://www.forsalebyowner.com/images/original/2390/23905745-4.jpg?1545409073',
+          'https://www.forsalebyowner.com/images/original/2390/23905745-5.jpg?1545409073',
+          'https://www.forsalebyowner.com/images/original/2390/23905745-6.jpg?1545409073',
+          'https://www.forsalebyowner.com/images/original/2390/23905745-7.jpg?1545409073'],
+ 'postalCode': '12020',
+ 'price': '$379,000',
+ 'sqft': '0sqft',
+ 'status': 'Active',
+ 'streetAddress': '410 Geyser Road',
+ 'structure_type': 'Structure',
+ 'style': 'Other'}
+2019-02-21 09:11:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/88-pine-street-Oceanside-NY/54fa5c82aff839c0488b45b4> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/88-pine-street-Oceanside-NY/54fa5c82aff839c0488b45b4>
+{'addressLocality': 'Oceanside',
+ 'addressRegion': 'NY',
+ 'baths': '2 baths',
+ 'beds': '3',
+ 'build_year': '1930',
+ 'des': 'Great home on a tree lined street. Formal dinning room new hard wood '
+        'floors, new  bathroom, new windows  finished basement with private '
+        'entrance . The garage is detached with a bonus room. The home is in '
+        'walking distance to shopping house of worship and to the great '
+        'desirable schools of Oceanside. This is a must see home.      NEW '
+        'ROOF    NEW CARPORT  NEW GARAGE DOOR   TAKE A LOOK.      CALL THE '
+        'OWNER 646 -567-3545 NEW KITCHEN WITH NEW APPLIANCE, NEW DRIVEWAY NON '
+        'FLOOD ZONE',
+ 'lot_size': '1.5 Spaces',
+ 'phone': '646 567 3545',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2389/23899580-7.jpg?1445882975',
+          'https://www.forsalebyowner.com/images/original/2389/23899580-8.jpg?1445883040',
+          'https://www.forsalebyowner.com/images/original/2389/23899580-9.jpg?1445883161',
+          'https://www.forsalebyowner.com/images/original/2389/23899580-2.jpg?1445883161',
+          'https://www.forsalebyowner.com/images/original/2389/23899580-5.jpg?1445883148',
+          'https://www.forsalebyowner.com/images/original/2389/23899580-6.jpg?1445883148'],
+ 'postalCode': '11572',
+ 'price': '$440,000',
+ 'sqft': '1,350sqft',
+ 'status': 'Active',
+ 'streetAddress': '88 pine street',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/Rest-Plause-Road-High-Falls-NY/54fa5bd2aff83941478b456a> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/Rest-Plause-Road-High-Falls-NY/54fa5bd2aff83941478b456a>
+{'addressLocality': 'High Falls',
+ 'addressRegion': 'NY',
+ 'baths': '0 baths',
+ 'beds': '0',
+ 'build_year': '109',
+ 'des': 'Exceptionally beautiful property located on a lovely country road and '
+        'quietly nestled in between Stone Ridge and High Falls. A perfect '
+        'place to build the home of your dreams. This land offers everything '
+        'that you could hope for: mountain views, rolling meadows, mature '
+        'woods, frontage on the Benjamin Brook, direct access to the rail '
+        'trail, stone walls. All of it privately sited but not isolated. The '
+        'best of both worlds.',
+ 'phone': '845-687-7576',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2378/23784746-1.jpg?1408076707',
+          'https://www.forsalebyowner.com/images/original/2378/23784746-2.jpg?1408076707',
+          'https://www.forsalebyowner.com/images/original/2378/23784746-3.jpg?1408076707'],
+ 'postalCode': '12440',
+ 'price': '$1,500,000',
+ 'sqft': '0sqft',
+ 'status': 'Active',
+ 'streetAddress': 'Rest Plause Road',
+ 'style': 'Farm/Land'}
+2019-02-21 09:11:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/31-Mansion-Ridge-Blvd-Monroe-NY/54fa5a9aaff83986558b45b8> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:11:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/31-Mansion-Ridge-Blvd-Monroe-NY/54fa5a9aaff83986558b45b8>
+{'addressLocality': 'Monroe',
+ 'addressRegion': 'NY',
+ 'baths': '4.5 baths',
+ 'beds': '4',
+ 'build_year': '2004',
+ 'des': 'Beautiful 5760 sq ft Colonial located on 17th Fairway on prestigious '
+        'Jack Nicklaus signature Golf Course. Professional Kitchen with '
+        'Thermador stainless appliances and 9ft Center Island . Master Bedroom '
+        'and bath with whirlpool tub. 2nd bedroom has its own full bath and '
+        '3rd & 4th bedrms share a Jack&Jill bath. 2 story Great room with '
+        'custom woodwork fireplace & back staircase. Formal Dining room and '
+        'Living room. Custom tile & wood floor Foyer. Laundry room & office '
+        'with bay windows. First two floors are wired for sound. approx 2,000 '
+        'sq ft finished walkout basement featuring a Professional Home '
+        'Theather Room & wet bar. Three car Garage. Stone & stucco exterior. '
+        'In ground sprinkler system. 24/7 security gaurd in gated community '
+        'with community pool. many extras such as upgraded plumbing, bathroom '
+        'fixtures, tile work, molding, windows & lighting, etc. AMAZING sunset '
+        'views overlooking golf course in back and gorgeous mountain views in '
+        'front. Top rated MONROE-WOODBURY School Distict. Great commutor '
+        'Location***email or call for more details or pictures.',
+ 'lot_size': '0.76 Acres',
+ 'parking': '3 Space',
+ 'phone': '845-774-5513',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2230/22301751-1.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-2.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-3.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-4.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-5.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-6.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-7.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-8.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-9.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-10.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-11.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-12.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-13.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-14.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-15.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-16.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-17.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-18.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-19.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-20.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-21.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-22.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-23.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-24.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-25.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-26.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-27.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-28.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-29.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-30.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-31.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-32.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-33.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-34.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-35.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-36.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-37.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-38.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-39.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-40.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-41.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-42.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-43.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-45.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-44.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-46.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-47.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-48.jpg?1456184258',
+          'https://www.forsalebyowner.com/images/original/2230/22301751-49.jpg?1456184258'],
+ 'postalCode': '10950',
+ 'price': '$699,990',
+ 'sqft': '5,760sqft',
+ 'status': 'Active',
+ 'streetAddress': '31 Mansion Ridge Blvd',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:11:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/2-page> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:12:02 [scrapy.extensions.logstats] INFO: Crawled 11 pages (at 10 pages/min), scraped 9 items (at 9 items/min)
+2019-02-21 09:12:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/1287-County-Hwy--25-Richfield-Springs-NY/54fa55e2aff839a5558b45b6> (referer: https://www.forsalebyowner.com/search/list/New%20York/1-page)
+2019-02-21 09:12:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/1287-County-Hwy--25-Richfield-Springs-NY/54fa55e2aff839a5558b45b6>
+{'addressLocality': 'Richfield Springs',
+ 'addressRegion': 'NY',
+ 'baths': '2 baths',
+ 'beds': '6',
+ 'build_year': '1890',
+ 'des': 'PRICE REDUCED.  WILLING TO NEGOCIATE Love the country? Beautiful '
+        'setting among the hills of central NY with your own pond stocked with '
+        'bass. Victorian with new addition in 1972, remodeled kitchen 2005. '
+        'Formal living room and dining room, eat-in kitchen, family room, '
+        'laundry room, computer room, six bedrooms and two baths. Open front '
+        'porch, enclosed back porch with open deck attached. Bay windows in '
+        'dining room and living room. Beautiful perennial gardens surround the '
+        'back and side yards. Two story barn on other side of circular drive '
+        'needs repair. Two miles from historic town of Richfield Springs where '
+        'the Richfield Springs Central School is located as well as a large '
+        'grocery chain, drug store chain, hardware store, restaurants, bank '
+        'and churches. Canadarago Lake with State boat launch, good fishing '
+        'and community beach area within three miles. Three golf courses '
+        'within fifteen miles. 20 min.(15 mi.) to beautiful '
+        'Cooperstown,(baseball hall of fame),thirty minutes to shopping malls. '
+        '70 minutes to Albany or Syracuse airports.Selling only 27 acres. WE '
+        'ARE LOWERING THE PRICE TO $185,000 NEW PRICE LISTED!!',
+ 'phone': '315 858 0946',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2058/20586500-1.jpg?1408076784',
+          'https://www.forsalebyowner.com/images/original/2058/20586500-2.jpg?1408076784',
+          'https://www.forsalebyowner.com/images/original/2058/20586500-3.jpg?1408076784',
+          'https://www.forsalebyowner.com/images/original/2058/20586500-4.jpg?1408076784',
+          'https://www.forsalebyowner.com/images/original/2058/20586500-5.jpg?1408076784',
+          'https://www.forsalebyowner.com/images/original/2058/20586500-6.jpg?1408076784'],
+ 'postalCode': '13439',
+ 'price': '$185,000',
+ 'sqft': '2,200sqft',
+ 'status': 'Active',
+ 'streetAddress': '1287 County Hwy. 25',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/415-John-Joy-Road-Woodstock-NY/54fa575baff839b7368b4577> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/415-John-Joy-Road-Woodstock-NY/54fa575baff839b7368b4577>
+{'addressLocality': 'Woodstock',
+ 'addressRegion': 'NY',
+ 'baths': '1.5 baths',
+ 'beds': '1',
+ 'build_year': '1973',
+ 'des': 'Call: (845)-684-5427 Email: nsxlojck@gmail.com Completely renovated '
+        "rustic cabin located in one of Woodstock's most desirable areas. 3 "
+        'miles from town and minutes to Thruway. Very private setting on 1.50 '
+        'acres with long circular driveway. Bedroom includes fireplace and '
+        'half bath. Full Bath includes $10,000 antique Kohler soaking tub. '
+        'Living room includes fireplace and cathedral ceiling. Kitchen '
+        'includes all new built-in appliances plus washer and dryer. Hand hewn '
+        'barn beams and hardwood floors throughout 2 large cedar decks Oil '
+        'heat, underground electricity. Low property taxes and low maintenance '
+        'costs. Please call only. No Emails',
+ 'phone': '845-684-5427',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2105/21058879-4.jpg?1498852635',
+          'https://www.forsalebyowner.com/images/original/2105/21058879-5.jpg?1498852676',
+          'https://www.forsalebyowner.com/images/original/2105/21058879-2.jpg?1498852676',
+          'https://www.forsalebyowner.com/images/original/2105/21058879-3.jpg?1498852676',
+          'https://www.forsalebyowner.com/images/original/2105/21058879-6.jpg?1498852654'],
+ 'postalCode': '12498',
+ 'price': '$325,000',
+ 'sqft': '1,200sqft',
+ 'status': 'Active',
+ 'streetAddress': '415 John Joy Road',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/16-Vanduzer-Avenue-Wurtsboro-NY/54fa585aaff839983a8b45ac> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/16-Vanduzer-Avenue-Wurtsboro-NY/54fa585aaff839983a8b45ac>
+{'addressLocality': 'Wurtsboro',
+ 'addressRegion': 'NY',
+ 'baths': '1.5 baths',
+ 'beds': '5',
+ 'build_year': '0',
+ 'des': "***Minutes to the Rebirth of Sullivan County's New Casino MONTREIGN "
+        'the Disney Land of the North , $1 billion resort  with gambling, '
+        'shopping, spa, waterpark and horseracing and the "Monticello Motor '
+        'Club Premiere"  Sweeping Panaramic Mountain Views throughout this '
+        'Beautiful 5 bedroom year round home known as SILVER ROCK located in a '
+        'rolling wooded countryside setting on a landscaped corner lot, '
+        'majestically overlooking the Wurtsboro Mountains.  Newly Renovated '
+        'and Completed in 2017. Convenient to major lakes, fishing, hunting, '
+        'ski resorts, shopping; Easy access to Route 17 and 90 minutes to the '
+        'George Washington Bridge offering direct access to all of New York '
+        'City. Located in the trendy Town of Wurtsboro, NY. Priced slashed '
+        'below market. Relocated. Call Dr. Shelley  Full Walkout Basement with '
+        'a poured concrete slab floor, full size windows, on a River-Stone '
+        'foundation; great space for entertainment/party room; office and den; '
+        '*Architectural Integrity has been maintained and preserved; * NEW '
+        'Entrance/Deck  * NEW 200 AMP Electric Service; * Efficient NEW Oil '
+        'Baseboard Heating and Hotwater System; * NEW Chimney and Exhaust '
+        'System * Master Bedroom Suite includes expansive sun room with walls '
+        'of NEW Anderson Windows overlooking panoramic mountain views; * NEW '
+        'reconstructed Bathroom structure including NEW Plumbing finishing and '
+        'fixtures; * New finished flooring throughout;  * Fully accessible '
+        'attic; * Landscaped private park-like setting on a quiet community '
+        'corner lot, surrounded by Signature Silver Rocks; * Detached Storage '
+        'Shed; * Stand Alone Vintage 2 person Outhouse!!!! * Antique (circa '
+        '1945) Camping Trailer (sleeps 6) Conveys; * Community Recreation '
+        'facilities includes all amenities, pool; * Future expansion potential '
+        'for build out of a 3 level addition, wraparound porch, 2 car garage '
+        'with connecting enclosed breeze way, accessing all 3 levels of '
+        'existing home; * Additionally, two adjoining building lots available '
+        'with continuous mountain scenic views increasing the property size to '
+        '1 ACRE (+/-) The breathtaking views and natural surroundings of '
+        'SILVER ROCK provides inspiration, memories and traditions. Listen to '
+        'the ripple of a mountain stream or breathe the scent of dew on the '
+        'pines, and your body and mind are transcended to a place of discovery '
+        'and adventure. Stone, granite and timber will act as timeless '
+        'building blocks, while modern conveniences and your own imagination '
+        'will establish Silver Rock as a legacy to you and your family. PLEASE '
+        'NOTE THAT OWNER FINANCING IS NOT OFFERED',
+ 'lot_size': '0.30 Acres',
+ 'parking': '1 Space',
+ 'phone': '561 360 5753',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2070/20701814-1.jpg?1408076320',
+          'https://www.forsalebyowner.com/images/original/2070/20701814-2.jpg?1408076320',
+          'https://www.forsalebyowner.com/images/original/2070/20701814-3.jpg?1408076321',
+          'https://www.forsalebyowner.com/images/original/2070/20701814-4.jpg?1408076321',
+          'https://www.forsalebyowner.com/images/original/2070/20701814-5.jpg?1408076321',
+          'https://www.forsalebyowner.com/images/original/2070/20701814-6.jpg?1408076321'],
+ 'postalCode': '12790',
+ 'price': '$189,900',
+ 'sqft': '2,000sqft',
+ 'status': 'Active',
+ 'streetAddress': '16 Vanduzer Avenue',
+ 'structure_type': 'House',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/State-Route-7-SIDNEY-NY/54fa5839aff8394a3a8b45ab> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/State-Route-7-SIDNEY-NY/54fa5839aff8394a3a8b45ab>
+{'addressLocality': 'SIDNEY',
+ 'addressRegion': 'NY',
+ 'baths': '6 baths',
+ 'beds': '3',
+ 'build_year': '2000',
+ 'des': 'IMPRESSIVE FACILITY FOR SALE IN BEAUTIFUL UPSTATE NEW YORK. PRICE '
+        '259,000 LIVE: 2200 SQUARE FOOT HOME ABOVE SHOP AREA. PRIVATE '
+        'ENTRANCE. 3 BEDROOMS. 2 1/2 BATH. KITCHEN, LIVING ROOM, DINING ROOM, '
+        'LAUNDRY ROOM, AND 650 SQUARE FOOT LOFT. COULD BE 4 TH BEDROOM OR '
+        'OFFICE(ETC.) MASTER BATH HAS WALK IN SHOWER AND 2 PERSON JACUZZI TUB. '
+        'WORK AREAS: CURRENTLY DIVIDED INTO 3 SEPERATE AREAS. 1ST AREA IS A '
+        'BEAUTIFULLY RENOVATED OFFICE APPROX 400 SQ FT WITH A WORK AREA OF '
+        'ABOUT 1100 SQ FT. (CURRENTLY LEASED) 2ND AREA: APPROX 3300 SQ FT WORK '
+        'AREA WITH 3 OVERHEAD DOORS AND 16 FT CEILINGS. RADIANT HEAT IN THE '
+        'FLOOR 3RD AREA: APPROX 1400 SQ FT WORK AREA WITH 1 OVERHEAD DOOR '
+        'RADIANT HEAT IN FLOOR. 16 FT VAULTED CEILINGS . LARGE OFFICE WITH '
+        'KITCHEN APPROX 650 SQ FT HARDWOOD FLOORS (CURRENTLY LEASED ) THIS IS '
+        'AN EXCELLENT INVESTMENT OPPORTUNITY OR PLACE TO HAVE YOUR OWN '
+        'BUSINESS AND LET THE LEASED AREAS FUND YOUR ENDEAVOR.  ALL APPLIANCES '
+        'ARE INCLUDED.  ASKING 259,000.00 IF YOU ARE SERIOUSLY INTERESTED '
+        'PLEASE CALL DAVE AT 607 435 8900  APPRAISED ON 3/27/2015 FOR '
+        '375,000.00',
+ 'lot_size': '0.25 Acres',
+ 'parking': '5 Space',
+ 'phone': '1-800-843-6963 (ID=21178380)',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2117/21178380-1.jpg?1408076969',
+          'https://www.forsalebyowner.com/images/original/2117/21178380-2.jpg?1408076969',
+          'https://www.forsalebyowner.com/images/original/2117/21178380-4.jpg?1408076969',
+          'https://www.forsalebyowner.com/images/original/2117/21178380-5.jpg?1408076969',
+          'https://www.forsalebyowner.com/images/original/2117/21178380-6.jpg?1408076969'],
+ 'postalCode': '13838',
+ 'price': '$225,000',
+ 'sqft': '8,600sqft',
+ 'status': 'Active',
+ 'streetAddress': 'State Route 7',
+ 'structure_type': 'Structure',
+ 'style': 'Other'}
+2019-02-21 09:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/--Unadilla-NY/54fa5818aff8398e398b45a9> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/--Unadilla-NY/54fa5818aff8398e398b45a9>
+{'addressLocality': 'Unadilla',
+ 'addressRegion': 'NY',
+ 'baths': '0 baths',
+ 'beds': '0',
+ 'build_year': '300',
+ 'des': '    THEY ARE NOT MAKING ANY MORE LAND...Own your own  300  acre '
+        'mountain with ranch home........  2.5 hours from GW '
+        'bridge.Virgin-like land has endless opportunities. Rich in natural '
+        'resources, this land will challenge a new owner  who has the vision, '
+        'energy, and resources to build, nurture and create. Build your dream '
+        'house, a horse ranch or bulldoze a spring fed 5 acre pond. 3 miles '
+        'off major interstate I-88, a 45 minute ride to Cooperstown and 20 '
+        'minutes to Oneonta. This is upstate new york at its Best !! With '
+        'views, fields, logging trails, stone walls, natural springs,  pond '
+        'and spring fed stream, one can hike, hunt, fly fish, 4 wheel, '
+        'snowmobile, cross country ski, sleigh ride, or view breath taking '
+        'fall foliage in October. With its natural beauty, and because of  '
+        'future royalties from gas exploration  this unique property may be  '
+        'well under priced.          ',
+ 'phone': '914-441-4244',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2071/20712605-1.jpg?1408076863',
+          'https://www.forsalebyowner.com/images/original/2071/20712605-2.jpg?1408076863',
+          'https://www.forsalebyowner.com/images/original/2071/20712605-3.jpg?1408076863',
+          'https://www.forsalebyowner.com/images/original/2071/20712605-4.jpg?1408076863',
+          'https://www.forsalebyowner.com/images/original/2071/20712605-5.jpg?1408076863'],
+ 'postalCode': '13849',
+ 'price': '$850,000',
+ 'sqft': '0sqft',
+ 'status': 'Active',
+ 'streetAddress': '.',
+ 'style': 'Farm/Land'}
+2019-02-21 09:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/4-Oak-Ridge-Road-Pomona-NY/54fa57b5aff839ea378b45b7> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/4-Oak-Ridge-Road-Pomona-NY/54fa57b5aff839ea378b45b7>
+{'addressLocality': 'Pomona',
+ 'addressRegion': 'NY',
+ 'baths': '2.5 baths',
+ 'beds': '4',
+ 'build_year': '1969',
+ 'des': 'Tastefully updated 4 bedroom 2 1/2 bath bi-level on over a 1/2 acre '
+        'with a very private backyard. A wonderful family neighborhood with '
+        'LOW, LOW TAXES - This home is a must see! Beautiful kitchen with all '
+        'new stainless steel appliances, custom cabinets and all new fixtures. '
+        'Updated bathrooms, gorgeous re-finished hard wood floors, 2 '
+        'fireplaces and newer central air, furnace and hot water heater. '
+        'Freshly painted inside and out, new driveway, oversized 2 car garage, '
+        'shed and mature landscaping. Lots of recent detail work and up-grades '
+        'to get it in PERFECT move in condition for the next owner. Wonderful '
+        'starter home or move up from a condo or apartment. We honestly '
+        'believe this is the best house for the money in the Pomona area and '
+        'are happy to show it to you anytime! Private yet convenient, quiet '
+        '"no outlet" street with views of the Ramapo Mountains, near EXIT 13 '
+        'of the Palisades Parkway and a short distance to all other commutes '
+        '(Park & Ride express bus to Port Authority, Train to Hoboken, NJ, '
+        'Ferry to Ossining). Less than 25 miles to the George Washington '
+        'Bridge. Please contact us to arrange for a house viewing ANYTIME.    '
+        'NO INQUIRES FROM REALTORS ABOUT HELP LISTING HOUSE!!!',
+ 'lot_size': '0.57 Acres',
+ 'parking': '2 Space',
+ 'phone': '845-633-1501',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2119/21199856-1.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-2.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-3.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-4.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-5.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-6.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-7.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-8.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-9.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-10.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-11.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-12.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-13.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-14.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-15.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-16.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-17.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-18.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-19.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-20.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-21.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-22.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-23.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-24.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-25.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-26.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-27.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-28.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-29.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-30.jpg?1408076778',
+          'https://www.forsalebyowner.com/images/original/2119/21199856-31.jpg?1408076778'],
+ 'postalCode': '10970',
+ 'price': '$569,001',
+ 'sqft': '2,000sqft',
+ 'status': 'Active',
+ 'streetAddress': '4 Oak Ridge Road',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/7123-Amboy-Road-Staten-Island-NY/5938077ab0f83930648b4569> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/7123-Amboy-Road-Staten-Island-NY/5938077ab0f83930648b4569>
+{'addressLocality': 'Staten Island',
+ 'addressRegion': 'NY',
+ 'baths': '4 baths',
+ 'beds': '5',
+ 'build_year': '2003',
+ 'des': 'Built with 2" x 6" perimeter framing as well as interior partition '
+        'walls, beautiful two story entrance way, beautiful wood flooring over '
+        'entire first floor and part of second floor, ultra thick floor '
+        'molding, crown molding and around every threshold and window, '
+        'baseboard heat throughout except where radiant heat, radiant heat in '
+        "kitchen and all primary residence bathrooms, 9' high ceilings, master "
+        "bedroom 14' ceiling, 22' x 22' foot kitchen with over sized island, "
+        'two kitchen sinks, JennAir double wall oven, Bosch dishwasher, '
+        'Thermador range, 45 over sized custom Andersen windows throughout, '
+        'French doors in kitchen, two wood burning fireplaces, one in family '
+        'room, one in living room, set up to easily convert to gas if desired, '
+        'remote controlled whirlpool tub in master bdrm, plenty of recessed '
+        'lighting throughout, ceiling fans throughout, large walk-up attic, '
+        'plenty of closet space with walk-in closet in every bedroom, '
+        'over-sized two car garage can fit 3 cars if desired, spectacular '
+        'wraparound porch, off street parking for tenant, any many more',
+ 'parking': '3 Space',
+ 'phone': '9175877034',
+ 'pics': [],
+ 'postalCode': '10307',
+ 'price': '$1,600,000',
+ 'sqft': '6,500sqft',
+ 'status': 'Active',
+ 'streetAddress': '7123 Amboy Road',
+ 'structure_type': 'Structure',
+ 'style': 'Multi-family'}
+2019-02-21 09:12:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/Lot-9-Lake-Shore-Dr-South-Kortright-NY/563125f5aff839f76d8b4567> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/Lot-9-Lake-Shore-Dr-South-Kortright-NY/563125f5aff839f76d8b4567>
+{'addressLocality': 'South Kortright',
+ 'addressRegion': 'NY',
+ 'baths': '0 baths',
+ 'beds': '0',
+ 'build_year': '20',
+ 'des': 'Retreat to this beautiful 20.09 Acre building lot overlooking '
+        'pristine and private 34 acre Lake ChandaKim. Relax, fish, swim, '
+        'canoe, and hunt on your own little piece of paradise. This is the '
+        'largest parcel on the on the lake. Lightly wooded and sloped upward '
+        'to give you amazing views of the lake and surrounding '
+        'countryside.Surrounding homes are gorgeous. Includes lake rights, '
+        'electric lines to lot ,and no association fees. 17 miles to Delhi, NY',
+ 'phone': '845-283-0789',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2404/24049616-1.jpg?1446257493',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-2.jpg?1446257510',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-3.jpg?1446257527',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-4.jpg?1447157501',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-5.jpg?1447157516',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-6.jpg?1447157530',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-7.jpg?1450361215',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-8.jpg?1450361221',
+          'https://www.forsalebyowner.com/images/original/2404/24049616-9.jpg?1450361227'],
+ 'postalCode': '13842',
+ 'price': '$78,900',
+ 'sqft': '0sqft',
+ 'status': 'Active',
+ 'streetAddress': 'Lot 9 Lake Shore Dr',
+ 'style': 'Farm/Land'}
+2019-02-21 09:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/2-goffredo-drive-Guilderland-NY/54fa58f2aff839723d8b456e> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/2-goffredo-drive-Guilderland-NY/54fa58f2aff839723d8b456e>
+{'addressLocality': 'Guilderland',
+ 'addressRegion': 'NY',
+ 'baths': '1.5 baths',
+ 'beds': '3',
+ 'build_year': '1956',
+ 'des': 'Single family home with large double lot. One mile from thruway. '
+        'Close to Albany. Guilderland Schools. 3 bedrooms, one and a half '
+        'baths. Front porch and wrap around deck. Hardwood floors. Central '
+        'vac. AC. New H2O heater. Ceiling fans in living room, family room, '
+        'and bedrooms.  Shed, Greenhouse, Garden and pond. Decks sealed and '
+        'stained this spring.',
+ 'parking': '1 Space',
+ 'phone': '518-428-4999',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2178/21782818-6.jpg?1493074379',
+          'https://www.forsalebyowner.com/images/original/2178/21782818-9.jpg?1493074385',
+          'https://www.forsalebyowner.com/images/original/2178/21782818-5.jpg?1493074399',
+          'https://www.forsalebyowner.com/images/original/2178/21782818-8.jpg?1493074399',
+          'https://www.forsalebyowner.com/images/original/2178/21782818-7.jpg?1493074403',
+          'https://www.forsalebyowner.com/images/original/2178/21782818-2.jpg?1493074403'],
+ 'postalCode': '12303',
+ 'price': '$199,900',
+ 'sqft': '1,100sqft',
+ 'status': 'Active',
+ 'streetAddress': '2 goffredo drive',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/listing/8-Homestead-Dr-Plattsburgh-NY/54fa588aaff839ab3b8b457b> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
+2019-02-21 09:12:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.forsalebyowner.com/listing/8-Homestead-Dr-Plattsburgh-NY/54fa588aaff839ab3b8b457b>
+{'addressLocality': 'Plattsburgh',
+ 'addressRegion': 'NY',
+ 'baths': '2 baths',
+ 'beds': '3',
+ 'build_year': '2003',
+ 'des': 'For sale by owner Town of Plattsburgh (Vintage Estates) Raised Ranch '
+        'orginal owner Built 2003. 3 Miles to city, mall & shopping areas. '
+        'Home consists of 3 bedrooms, 2 full baths & laundry room on the upper '
+        'level. Features include carpeting, tile, vinyl and laminate flooring. '
+        'Large covered vinyl deck radiant in flooring heating, basement, '
+        'garage and upper living area. Home designed with open concept floor '
+        'plan. Appliances are new & included. Satellite television, cable, '
+        'town water and septic.Paved driveway, two car finished garage '
+        'electronic air exchange system and full basement. There are many '
+        'extras in this well-kept property. #displayHTML{font-family:arial; '
+        'font-size:12px;}   Contact by email only. puchee@aol.com',
+ 'parking': '2 Space',
+ 'phone': '518-534-1263',
+ 'pics': ['https://www.forsalebyowner.com/images/original/2089/20891714-1.jpg?1408076882',
+          'https://www.forsalebyowner.com/images/original/2089/20891714-2.jpg?1408076882',
+          'https://www.forsalebyowner.com/images/original/2089/20891714-3.jpg?1408076882',
+          'https://www.forsalebyowner.com/images/original/2089/20891714-4.jpg?1408076882',
+          'https://www.forsalebyowner.com/images/original/2089/20891714-5.jpg?1408076882',
+          'https://www.forsalebyowner.com/images/original/2089/20891714-6.jpg?1408076882'],
+ 'postalCode': '12901',
+ 'price': '$189,900',
+ 'sqft': '2,260sqft',
+ 'status': 'Active',
+ 'streetAddress': '8 Homestead Dr',
+ 'structure_type': 'Structure',
+ 'style': 'SingleFamily'}
+2019-02-21 09:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.forsalebyowner.com/search/list/New%20York/3-page> (referer: https://www.forsalebyowner.com/search/list/New%20York/2-page)
