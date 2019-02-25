@@ -5,6 +5,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from forsaleCrawl.items import ForsalecrawlItem
 import re
+from decimal import Decimal
 
 
 class ForsalebySpider(Spider):
@@ -39,9 +40,9 @@ class ForsalebySpider(Spider):
         item['addressRegion'] = response.xpath('//ul[@itemprop="address"]//li//span[@itemprop="addressRegion"]/text()').extract()[0]
         item['postalCode'] = response.xpath('//ul[@itemprop="address"]//li//span[@itemprop="postalCode"]/text()').extract()[0]
         item['streetAddress'] = response.xpath('//ul[@itemprop="address"]//li//span[@itemprop="streetAddress"]/text()').extract()[0]
-        cityId = re.search('(\d+)', item['streetAddress'])
-        # 城市ID
-        item['cityId'] = cityId.group() if cityId else ""
+        # cityId = re.search('(\d+)', item['streetAddress'])
+        # # 城市ID
+        # item['cityId'] = cityId.group() if cityId else ""
         # 风格 公寓 还是个人
         style = response.xpath('//ul/li[1]/span[@class="summary-list__label"]/text()').extract()[0]
         # Farm/Land
@@ -73,8 +74,45 @@ class ForsalebySpider(Spider):
         build_year = re.search("Built in:\s(\d+)", exterior_features)
         item['build_year'] = build_year.group(1) if build_year else ""
         # 地段面积
-        lot_size = re.search("Lot Size:\s([0-9][\.]\d+\s\w+)", exterior_features)
-        item['lot_size'] = lot_size.group(1) if lot_size else ""
+        # lot_size = re.search("Lot Size:\s(\d+\s\w+)", exterior_features)
+        # Lot Size: 300 Acres   Lot Size: 0.84 Acres
+        lot_size = ""
+        #  109 Acres
+        num_unit = re.search("Lot Size:\s(\d+)\s\w+", exterior_features)
+        # Lot Size: 0.84 Acres
+        double_unit = re.search(r"Lot Size:\s(\d+\.\d+)\s\w+", exterior_features)
+        # Lot Size: 90x140 Acres  40x100 Ft.
+        multi_num = re.search(r"Lot Size:\s(\d+)[x](\d+)\w+.", exterior_features)
+        # Lot Size: 1.5
+        double = re.search(r"Lot Size:\s(\d+\.\d)", exterior_features)
+        # Lot Size: 18,000 Sq. Ft.
+        sqft_lot_size = re.search(r"Lot Size:\s(\d+)\sSq. Ft.", exterior_features.replace(",", ""))
+        # Lot Size: 1 Acre
+        acre_lot_size = re.search(r"Lot Size:\s(\d+)\s\w+", exterior_features)
+        # Lot Size: N/A
+        acre_lot_size_tmp = re.search(r"Lot Size:\s(N/A)", exterior_features)
+        # Lot Size: 37x0 Ft.
+
+        if exterior_features.find("Acres", 0, len(exterior_features)) > 0:
+            if num_unit:
+                lot_size = Decimal(num_unit.group(1)) * Decimal(43560)
+            elif double_unit:
+                lot_size = Decimal(double_unit.group(1)) * Decimal(43560)
+        elif double:
+            lot_size = Decimal(double.group(1)) * Decimal(43560)
+        elif multi_num:
+            multi_num_first = multi_num.group(1)
+            multi_num_second = multi_num.group(2)
+            lot_size = Decimal(multi_num_first) * Decimal(multi_num_second)
+        elif sqft_lot_size:
+            lot_size = sqft_lot_size.group(1)
+        elif exterior_features.find("Acre", 0, len(exterior_features)) > 0:
+            lot_size = Decimal(acre_lot_size.group(1)) * Decimal(43560)
+        elif acre_lot_size_tmp:
+            lot_size = acre_lot_size_tmp.group(1)
+        else:
+            print(exterior_features)
+        item['lot_size'] = lot_size
         # parking 停车位
         parking = re.search("Parking:\s(\d+\sSpace)", exterior_features)
         item['parking'] = parking.group(1) if parking else ""

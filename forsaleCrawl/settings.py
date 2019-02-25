@@ -41,10 +41,11 @@ DEBUG - 调试信息
 # LOG_FILE = log_file_path
 
 # mysql配置参数
-MYSQL_HOST = "localhost"
+MYSQL_HOST = "120.78.196.201"
 MYSQL_PORT = 3306
-MYSQL_USER = "root"
-MYSQL_DB = "python_data"
+MYSQL_USER = "ebuyhouse"
+MYSQL_PASSWD = "ebuyhouse"
+MYSQL_DB = "ebuyhouse_chonggou"
 
 # 默认情况下,RFPDupeFilter只记录第一个重复请求。将DUPEFILTER_DEBUG设置为True会记录所有重复的请求。
 DUPEFILTER_DEBUG = True

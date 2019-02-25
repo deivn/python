@@ -28,40 +28,47 @@ class MysqlHelper(object):
         self.port = settings['MYSQL_PORT']
         self.db = settings['MYSQL_DB']
         self.user = settings['MYSQL_USER']
-        self.passwd = ''
+        self.passwd = settings['MYSQL_PASSWD']
         self.charset = charset
 
     def connect(self):
         self.conn = MySQLdb.connect(host=self.host, port=self.port, db=self.db, user=self.user, passwd=self.passwd, charset=self.charset)
         self.cursor = self.conn.cursor()
 
-    def close(self):
-        self.cursor.close()
-        self.conn.close()
+    @staticmethod
+    def close():
+        MysqlHelper.cursor.close()
+        MysqlHelper.conn.close()
 
     @staticmethod
     def get_one(sql, params=()):
+        return MysqlHelper()._find_one(sql, params)
+
+    @staticmethod
+    def get_all(sql, param=()):
+        return MysqlHelper()._find_all(sql, param)
+
+    def _find_all(self, sql, param):
+        list = ()
+        try:
+            self.connect()
+            self.cursor.execute(sql, param)
+            list = self.cursor.fetchall()
+            # self.close()
+        except Exception as e:
+            print(e)
+        return list
+
+    def _find_one(self, sql, param):
         result = None
         try:
-            MysqlHelper().connect()
-            MysqlHelper().cursor.execute(sql, params)
-            result = MysqlHelper().cursor.fetchone()
+            self.connect()
+            self.cursor.execute(sql, param)
+            result = self.cursor.fetchone()
             MysqlHelper().close()
         except Exception as e:
             print(e)
         return result
-
-    @staticmethod
-    def get_all(sql, params=()):
-        list = ()
-        try:
-            MysqlHelper().connect()
-            MysqlHelper().cursor.execute(sql, params)
-            list = MysqlHelper().cursor.fetchall()
-            MysqlHelper().close()
-        except Exception as e:
-            print(e)
-        return list
 
     @staticmethod
     def insert(sql, params=()):
@@ -82,7 +89,7 @@ class MysqlHelper(object):
             self.connect()
             count = self.cursor.execute(sql, params)
             self.conn.commit()
-            self.close()
+            # self.close()
         except Exception as e:
             print(e)
             # log.msg(e.message, log.ERROR)

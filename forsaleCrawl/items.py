@@ -18,7 +18,7 @@ class ForsalecrawlItem(scrapy.Item):
     # 街道信息
     streetAddress = scrapy.Field()
     # city_id
-    cityId = scrapy.Field()
+    # cityId = scrapy.Field()
     # 风格 公寓 还是个人
     style = scrapy.Field()
     base_info = scrapy.Field()
